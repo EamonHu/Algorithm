@@ -41,4 +41,31 @@ public class Num283MoveZeroes {
             nums[index++] = 0;
         }
     }
+
+    /**
+     * 第二遍写
+     */
+    public void moveZeros3(int[] nums) {
+        int index = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                nums[index++] = nums[i];
+            }
+        }
+        while (index < nums.length) {
+            nums[index++] = 0;
+        }
+    }
+
+    public void moveZero4(int[] nums) {
+        int index = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 0) {
+                index++;
+            } else if (index > 0) {
+                nums[i - index] = nums[i];
+                nums[i] = 0;
+            }
+        }
+    }
 }

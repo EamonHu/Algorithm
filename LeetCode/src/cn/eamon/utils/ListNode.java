@@ -1,4 +1,4 @@
-package cn.eamon.leetcode001_100.utils;
+package cn.eamon.utils;
 
 /**
  * @Author: Eamon

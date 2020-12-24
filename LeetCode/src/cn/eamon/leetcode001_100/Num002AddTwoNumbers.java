@@ -1,7 +1,7 @@
 package cn.eamon.leetcode001_100;
 
 
-import cn.eamon.leetcode001_100.utils.ListNode;
+import cn.eamon.utils.ListNode;
 
 /**
  * @Author: Eamon
